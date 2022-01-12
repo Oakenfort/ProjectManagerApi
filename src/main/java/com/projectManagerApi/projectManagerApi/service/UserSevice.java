@@ -25,7 +25,7 @@ public class UserSevice {
     public List<User> findAll(){
         return userDao.findAll();
     }
-    public User update(User user){
+    public User update(long id,User user){
         User user1 = new User();
         user1.setName(user.getName());
         user1.setManager(user.isManager());
