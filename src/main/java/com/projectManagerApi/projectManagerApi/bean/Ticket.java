@@ -18,16 +18,18 @@ public class Ticket {
     private String startDate;
     private String endDate;
     private String status;
+    private String lastModified;
 
     public Ticket(){
 
     }
 
-    public Ticket(String title, String startDate, String endDate, String status) {
+    public Ticket(String title, String startDate, String endDate, String status, String lastModified) {
         this.title = title;
         this.startDate = startDate;
         this.endDate = endDate;
         this.status = status;
+        this.lastModified = lastModified;
     }
 
     public long getId() {
@@ -68,6 +70,14 @@ public class Ticket {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getLastModified() {
+        return lastModified;
+    }
+
+    public void setLastModified(String lastModified) {
+        this.lastModified = lastModified;
     }
 }
 
