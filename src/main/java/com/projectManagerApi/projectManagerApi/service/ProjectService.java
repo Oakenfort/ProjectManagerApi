@@ -28,7 +28,7 @@ public class ProjectService {
 
     }
 
-    public Project update(Long id, Project p){
+    public Project update(long id, Project p){
         Project p1 = new Project();
         p1 = this.findById(id);
         p1.setTitle(p.getTitle());
